@@ -10,8 +10,6 @@
 
 **Sistem manajemen data mahasiswa canggih dengan GUI modern yang dibangun menggunakan Java Swing**
 
-[Fitur](#-fitur) • [Instalasi](#-instalasi) • [Penggunaan](#-penggunaan) • [Dokumentasi](#-dokumentasi)
-
 </div>
 
 ## 📋 Daftar Isi
@@ -166,44 +164,12 @@ Sistem secara otomatis menentukan status mahasiswa berdasarkan IPK:
 
 ## 📚 Dokumentasi
 
-### Architecture Overview
-
-```
-Sistem Manajemen Data Mahasiswa
-├── Presentation Layer (GUI)
-│   ├── MainFrame - Window utama
-│   ├── InputPanel - Form input data
-│   ├── DisplayPanel - Tampilan tabel data
-│   └── HistoryPanel - Statistik & riwayat
-├── Business Logic Layer
-│   ├── DataManager - Manajemen data (Singleton)
-│   └── Mahasiswa - Model data
-├── Data Access Layer
-│   └── FileHandler - File I/O operations
-└── Utilities Layer
-    └── Constants - Konfigurasi aplikasi
-```
-
 ### Design Patterns Used
 
 - **Singleton Pattern** - DataManager
 - **MVC Pattern** - Separation of concerns
 - **Observer Pattern** - Data updates
 - **Factory Pattern** - Object creation
-
-### Data Flow
-
-```mermaid
-graph TD
-    A[User Input] --> B[InputPanel]
-    B --> C[DataManager]
-    C --> D[FileHandler]
-    D --> E[Save to File]
-    C --> F[DisplayPanel]
-    C --> G[HistoryPanel]
-    F --> H[Update Table]
-    G --> I[Update Statistics]
-```
 
 ## 🗂️ Struktur Project
 
